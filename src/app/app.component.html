@@ -2,7 +2,18 @@
 <p>{{title}}</p>
 <p [innerHTML]="title"></p>
 <p>title</p>
+<!--Property binding-->
 <p>The sum 2+2{{1+1+getVal()}}</p>
 
 <!--<div>{{htmlSring}}</div>-->
 <div [innerHTML]="htmlString"></div>
+<div>
+<a href="https://google.it">Link</a>
+</div>
+<div>
+<a href="{{linkUrl}}">Link</a>
+</div>
+<div>
+  <a [href]="https://google.it">Link</a>
+  </div>
+  
