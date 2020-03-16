@@ -1,19 +1,24 @@
 <!--interpolazione-->
+<!--
 <p>{{title}}</p>
 <p [innerHTML]="title"></p>
 <p>title</p>
-<!--Property binding-->
+Property binding
 <p>The sum 2+2{{1+1+getVal()}}</p>
-
-<!--<div>{{htmlSring}}</div>-->
+-->
+<div>{{htmlString}}</div>
 <div [innerHTML]="htmlString"></div>
+ 
 <div>
 <a href="https://google.it">Link</a>
 </div>
-<div>
-<a href="{{linkUrl}}">Link</a>
+<div><!--questo è quello normale-->
+<a href="linkUrl">Link</a>
 </div>
+<!--questi 2 sono gli altri-->
 <div>
-  <a [href]="https://google.it">Link</a>
+  <a [href]="linkUrl">Link</a>
   </div>
-  
+  <div>
+    <a href="{{linkUrl}}"></a>
+  </div>

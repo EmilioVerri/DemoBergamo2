@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'DemoBergamo2';
+  //title = 'DemoBergamo2';
 
   //property binding
- getVal(){
-  return 2;}
+ /*getVal(){
+  return 2;}*/
 
-  htmlString = '<div><p>Prova</div></p>';
+  htmlString='<div><p>Prova</div></p>';
   
-  linkUrl ='https://google.it';
+  linkUrl='https://google.it';
 }
