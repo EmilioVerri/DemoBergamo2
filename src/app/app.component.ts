@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'DemoBergamo2';
 
- // getVal(){
- //  return 2;}
+ getVal(){
+  return 2;}
 
   htmlString = '<div><p>Prova</div></p>';
   
