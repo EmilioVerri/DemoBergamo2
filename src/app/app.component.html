@@ -5,20 +5,23 @@
 <p>title</p>
 Property binding
 <p>The sum 2+2{{1+1+getVal()}}</p>
--->
+
 <div>{{htmlString}}</div>
 <div [innerHTML]="htmlString"></div>
  
 <div>
 <a href="https://google.it">Link</a>
 </div>
-<div><!--questo è quello normale-->
+<div>questo è quello normale
 <a href="linkUrl">Link</a>
 </div>
-<!--questi 2 sono gli altri-->
+questi 2 sono gli altri
 <div>
-  <a [href]="linkUrl">Link</a>
-  </div>
+  <a [href]="linkUrl">Link</a> //mettendo le quadre stiamo dicendo che stiamo inserendo href come una roperties di angular
+  </div> //lo si può fare con tutti le quadre
   <div>
     <a href="{{linkUrl}}"></a>
-  </div>
+  </div>-->
+  <app-primo [titoloInput]="title"></app-primo>
+  <!--si può fare anche con interpolazione-->
+  <!--<app-primo titoloInput="{{'Cablata'}}"></app-primo>-->
