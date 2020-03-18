@@ -41,7 +41,7 @@ export class SecondoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  testo: string = 'Iniziale';
   clickEvent(ev: MouseEvent, param: number){
     if(param === 2){
       this.testo = 'Default';
@@ -49,7 +49,7 @@ export class SecondoComponent implements OnInit {
     console.log('ho cliccato il pulsante: '+param);
     ev.stopPropagation();
   }
-  testo: string = 'Iniziale';
+  
   inputEvent(ev){
     this.testo = ev.target.value;
   }
