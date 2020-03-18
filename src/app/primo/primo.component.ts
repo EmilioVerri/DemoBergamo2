@@ -18,9 +18,28 @@ title = 'DemoBergamo2';
   
   @Input()
   titoloInput:string; //creo una variabile 
-  constructor() { }
+  
+
+  lista = [1,2,5,6];
+
+  constructor(){
+    //const a = this.lista[2];
+  }
 
   ngOnInit(): void {
   }
+ 
+  getCosa(){
+    //this.htmlString='ciao';
+   // return this.title;
+  }
+
+myDate: Date= new Date();
+
+oggetto: {chiave:string};
+
+oggetto1:{chiave:string}=
+{chiave:'valoreChiave'};
 
 }
+

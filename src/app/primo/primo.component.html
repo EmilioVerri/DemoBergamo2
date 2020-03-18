@@ -22,4 +22,28 @@
   <div>
     <a href="{{linkUrl}}"></a>
   </div>
+  <div *ngfor="let pippo of lista">
+    {{lista}}
+</div>
+<p>{{getCosa()}}</p>
+<div>{{lista[0]}}</div>
+<div>{{lista[1]}}</div>
+<div>{{lista[2]}}</div>
+
+
+
 <p>{{titoloInput}} works!</p>
+
+<p>{{titoloInput|uppercase}} works!</p><!--è tutto in uppercase-->
+
+<p>{{myDate}}</p>
+<p>{{myDate|date:'long'|uppercase}}</p><!--ce lo da diverso-->
+<!--non si puo mettere prima l'uppercase-->
+
+
+<p>{{oggetto?.chiave}}</p>
+<p>{{oggetto1?.chiave}}</p>
+
+
+
+
