@@ -22,9 +22,9 @@
   <div>
     <a href="{{linkUrl}}"></a> //interpolazione
   </div>
-  <div *ngfor="let pippo of lista">
+  <!--<div *ngfor="let pippo of lista">
     {{lista}}
-</div>
+</div>-->
 <p>{{getCosa()}}</p>
 <div>{{lista[0]}}</div>
 <div>{{lista[1]}}</div>
@@ -45,7 +45,7 @@
 <p>{{oggetto?.chiave}}</p>
 <p>{{oggetto1?.chiave}}</p>
 
-
+<p *ngFor="let elemento of lista">{{elemento}}</p>
 
 <p [class.colorRed]="toggleStyle"
 [class.boldStyle]="!toggleStyle">{{titoloInput | lowercase}}

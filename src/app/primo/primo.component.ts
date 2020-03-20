@@ -6,6 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./primo.component.scss']
 })
 export class PrimoComponent implements OnInit {
+lista:string[]=['stringa1','stringa2','stringa3'];
+
+
   toggleStyle:boolean=true;
 
   get myStyles(){
@@ -28,7 +31,7 @@ title = 'DemoBergamo2';
   titoloInput:string; //creo una variabile 
   
 
-  lista = [1,2,5,6];
+  //lista = [1,2,5,6];
 
   constructor(){
     //si può definire un solo costruttore per classe
