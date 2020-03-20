@@ -38,7 +38,7 @@ export class SecondoComponent implements OnInit {
 
   testo: string = 'Iniziale';
 
-  @Output()
+  @Output('clickPulsante')
   myClick: EventEmitter<string>= new EventEmitter();
 
 

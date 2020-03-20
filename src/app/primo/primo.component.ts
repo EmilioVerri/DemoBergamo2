@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-primo',
@@ -27,7 +28,7 @@ title = 'DemoBergamo2';
   
   linkUrl='https://google.it';
   
-  @Input()
+  @Input('parametroInput')
   titoloInput:string; //creo una variabile 
   
 
