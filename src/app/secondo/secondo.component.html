@@ -15,25 +15,29 @@ l'ho spostato da secondo.component.ts
 
 
 <p>{{testo}}</p>
+<button (click)="clickNew(inputTwoWayRef.value)">mostra two way value</button>
 <!--i due esempi qua sotto sono equivalenti
     <input (input)="inputEvent($event)"[value]="testo">
 <input [(ngModel)]="testo">
 -->
 <div>
     <label>one way binding verso l'utente [value]="testo"</label>
-    <input [value]="testo">
+    <input [value]="testo" #inputPropertyRef>
+    <p>valore inputPropertyRef:{{inputPropertyRef.value}}</p>
 </div>
 
 <div>
     <label>one way binding verso il codice(input)="inputEvent(this.testo=$event.target.value;)"</label>
-    <input (input)="inputEvent($event)" >
+    <input (input)="inputEvent($event)" #inputEventRef >
+    <p>Valore inputEventRef:{{inputEventRef.value}}</p>
 </div>
 
 
 <div>
     <label>two way binding a mano</label>
    <!-- <input (input)="inputEvent($event)"[value]="testo">-->
-   <input (input)="testo=$event.target.value"[value]="testo">
+   <input (input)="testo=inputTwoWayRef.value" [value]="testo" #inputTwoWayRef>
+   <p>Valore inputTwoWayRef:{{inputTwoWayRef.value}}</p>
 </div>
 
 
