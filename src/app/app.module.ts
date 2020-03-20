@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PrimoComponent } from './primo/primo.component';
 import { SecondoComponent } from './secondo/secondo.component';
 import {CiclovitaComponent} from './ciclovita/ciclovita.component';
+
 @NgModule({
   declarations: [
     AppComponent,

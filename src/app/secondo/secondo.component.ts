@@ -23,6 +23,7 @@ export class SecondoComponent implements OnInit {
 }
 */
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { ComunicazioneService } from '../Comunicazione.service';
 
 @Component({
   selector: 'app-secondo',
@@ -31,7 +32,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class SecondoComponent implements OnInit {
   
-  constructor() { }
+  constructor(private comunicazioneService: ComunicazioneService) { 
+
+  }
 
   ngOnInit(): void {
   }
@@ -60,6 +63,9 @@ export class SecondoComponent implements OnInit {
 
   clickNew(value:string){
     console.log(value);
+
+
+    this.comunicazioneService.pubblicaNuovoMessaggio(this.testo);
   }
 
 }

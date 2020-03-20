@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { ComunicazioneService } from '../Comunicazione.service';
 
 @Component({
   selector: 'app-primo',
@@ -34,9 +35,10 @@ title = 'DemoBergamo2';
 
   //lista = [1,2,5,6];
 
-  constructor(){
-    //si può definire un solo costruttore per classe
-    //const a = this.lista[2];
+  constructor(private comunicazioneService: ComunicazioneService) {
+    this.comunicazioneService.messaggio$.subscribe(value=>{
+      console.log('ecco il nuovo messaggio: '+value);
+    }); 
   }
 
   ngOnInit(): void {
