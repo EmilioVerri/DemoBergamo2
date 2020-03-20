@@ -17,10 +17,10 @@
 </div>
 <!--questi 2 sono gli altri-->
 <div>
-  <a [href]="linkUrl">Link</a> //mettendo le quadre stiamo dicendo che stiamo inserendo href come una roperties di angular
+  <a [href]="linkUrl">Link</a> //mettendo le quadre stiamo dicendo che stiamo inserendo href come una roperties di angular,property binding
   </div> //lo si può fare con tutti le quadre
   <div>
-    <a href="{{linkUrl}}"></a>
+    <a href="{{linkUrl}}"></a> //interpolazione
   </div>
   <div *ngfor="let pippo of lista">
     {{lista}}
@@ -29,6 +29,7 @@
 <div>{{lista[0]}}</div>
 <div>{{lista[1]}}</div>
 <div>{{lista[2]}}</div>
+
 
 
 

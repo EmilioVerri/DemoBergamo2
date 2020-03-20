@@ -5,7 +5,6 @@
 <p>title</p>
 Property binding
 <p>The sum 2+2{{1+1+getVal()}}</p>
-
 <div>{{htmlString}}</div>
 <div [innerHTML]="htmlString"></div>
  
@@ -27,4 +26,4 @@ questi 2 sono gli altri
   <!--<app-primo titoloInput="{{'Cablata'}}"></app-primo>-->
 
   <!--<app-primo [titoloInput]="title"></app-primo>-->
-  <app-secondo></app-secondo>
+  <app-secondo (myClick)="clickAppComponent($event)"></app-secondo> 

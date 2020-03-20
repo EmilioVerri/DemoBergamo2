@@ -23,11 +23,14 @@ title = 'DemoBergamo2';
   lista = [1,2,5,6];
 
   constructor(){
+    //si può definire un solo costruttore per classe
     //const a = this.lista[2];
   }
 
   ngOnInit(): void {
+    
   }
+  
  
   getCosa(){
     //this.htmlString='ciao';
@@ -40,6 +43,7 @@ oggetto: {chiave:string};
 
 oggetto1:{chiave:string}=
 {chiave:'valoreChiave'};
+
 
 }
 
