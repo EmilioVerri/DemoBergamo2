@@ -47,4 +47,9 @@
 
 
 
-
+<p [class.colorRed]="toggleStyle"
+[class.boldStyle]="!toggleStyle">{{titoloInput | lowercase}}
+</p>
+<p class="boldStyle">{{myDate}}</p>
+<p [ngClass]="myStyles">{{myDate | date:'longDate' |uppercase}}</p>
+<button (click)="toggleStyle=!toggleStyle">Toggle Style</button>
