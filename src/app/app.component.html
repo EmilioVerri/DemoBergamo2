@@ -28,9 +28,9 @@ questi 2 sono gli altri
   <!--<app-primo [titoloInput]="title"></app-primo>-->
   <!--<app-secondo (myClick)="clickAppComponent($event)"></app-secondo> -->
   <!--<app-primo [titoloInput]="title"></app-primo>-->
-  <button (click)="showComponent()">Cambia componente di prova</button>
+  <!--<button (click)="showComponent()">Cambia componente di prova</button>-->
   
-  <router-outlet></router-outlet>
+  
   <!--<div [ngSwitch]="componentToShow">
 
     <app-primo [parametroInput]="title" *ngSwitchCase="1" #primoComponent></app-primo>
@@ -41,3 +41,7 @@ questi 2 sono gli altri
         <app-secondo (clickPulsante)="clickAppComponent($event)"></app-secondo>
     </div>
 </div> -->
+
+<!--<button (click)="showComponent()">Cambia componente di prova</button>-->
+<router-outlet></router-outlet>
+<app-menu></app-menu>
