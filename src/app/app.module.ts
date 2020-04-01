@@ -10,7 +10,8 @@ import {CiclovitaComponent} from './ciclovita/ciclovita.component';
 import { MenuComponent } from './menu/menu.component';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { LoginComponent } from './login/login.component';
+import { HighlightDirective } from './highlight.directive';
+
 
 const appRoutes: Routes=[
   {path:'primo', component: PrimoComponent,data:{title:"Primo"}},
@@ -29,7 +30,7 @@ const appRoutes: Routes=[
     CiclovitaComponent,
     PageNotFoundComponent,
     MenuComponent,
-    LoginComponent
+    HighlightDirective
     
   ],
   imports: [
