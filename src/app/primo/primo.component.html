@@ -69,8 +69,17 @@
     green
   </ng-template >
 </p>
+
+----------------Qua direttive strutturali custom ---------------------------------------------------------
+<p *appUnless="color != null">non è indicato il colore</p>
+
 <button (click)="cambiaColore()">Cambia colore</button><br>
+
+
 ---------------------------------------------------------
+
+
+
 
 <p [class.colorRed]="toggleStyle"
 [class.boldStyle]="!toggleStyle">{{titoloInput | lowercase}}

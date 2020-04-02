@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HighlightDirective } from './highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 
 const appRoutes: Routes=[
@@ -30,7 +31,8 @@ const appRoutes: Routes=[
     CiclovitaComponent,
     PageNotFoundComponent,
     MenuComponent,
-    HighlightDirective
+    HighlightDirective,
+    UnlessDirective
     
   ],
   imports: [
