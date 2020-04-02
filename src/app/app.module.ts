@@ -12,6 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 
 
 const appRoutes: Routes=[
@@ -32,7 +33,8 @@ const appRoutes: Routes=[
     PageNotFoundComponent,
     MenuComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    ExponentialStrengthPipe
     
   ],
   imports: [

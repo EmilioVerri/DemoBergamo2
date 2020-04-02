@@ -63,7 +63,7 @@
 -------------------UTILIZZO NGIF con uso di else-----------------------
 <p> Il mio colore preferito è il:
   <ng-container *ngIf="color !=null; else coloreDefault">
-    {{color}}
+    {{color| uppercase}}
   </ng-container>
   <ng-template #coloreDefault>
     green
@@ -76,8 +76,12 @@
 <button (click)="cambiaColore()">Cambia colore</button><br>
 
 
----------------------------------------------------------
+--------------------QUA PIPE custom:-------------------------
+<p>{{5|exponentialStrength:'120'}}</p>
+<p>{{2+3|exponentialStrength:'3'}}</p>
 
+
+-----------------------------------------------------------
 
 
 
