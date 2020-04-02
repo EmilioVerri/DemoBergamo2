@@ -8,6 +8,9 @@ import { ComunicazioneService } from '../Comunicazione.service';
   styleUrls: ['./primo.component.scss']
 })
 export class PrimoComponent implements OnInit {
+
+color='blue';
+
 lista:string[]=['stringa1','stringa2','stringa3'];
 
 
