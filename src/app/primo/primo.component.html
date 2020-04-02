@@ -60,12 +60,16 @@
   {{elemento}}
 </ng-container>
 </p>
--------------------UTILIZZO NGIF-----------------------
+-------------------UTILIZZO NGIF con uso di else-----------------------
 <p> Il mio colore preferito è il:
-  <ng-container *ngIf="color">
+  <ng-container *ngIf="color !=null; else coloreDefault">
     {{color}}
   </ng-container>
+  <ng-template #coloreDefault>
+    green
+  </ng-template >
 </p>
+<button (click)="cambiaColore()">Cambia colore</button><br>
 ---------------------------------------------------------
 
 <p [class.colorRed]="toggleStyle"

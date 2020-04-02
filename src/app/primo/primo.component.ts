@@ -9,7 +9,7 @@ import { ComunicazioneService } from '../Comunicazione.service';
 })
 export class PrimoComponent implements OnInit {
 
-color='blue';
+color=null;
 
 lista:string[]=['stringa1','stringa2','stringa3'];
 
@@ -45,8 +45,12 @@ title = 'DemoBergamo2';
   }
 
   ngOnInit(): void {
-    
   }
+    cambiaColore(){
+      this.color=this.color==null ? 'blue': null;
+    }
+    
+  
   
  
   getCosa(){
