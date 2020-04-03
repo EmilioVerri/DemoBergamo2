@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PrimoComponent } from './primo/primo.component';
@@ -14,6 +14,7 @@ import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 
 
 const appRoutes: Routes=[
@@ -22,6 +23,7 @@ const appRoutes: Routes=[
   {path:'secondo',component:SecondoComponent},
   {path:'ciclo-vita',component:CiclovitaComponent},
   {path:'template-form', component:TemplateFormComponent},
+  {path: 'reactive-form',component:ReactiveFormComponent},
   {path:'', redirectTo:'primo',pathMatch:'full'},
   {path: '**',component:PageNotFoundComponent}
 ];
@@ -37,12 +39,14 @@ const appRoutes: Routes=[
     HighlightDirective,
     UnlessDirective,
     ExponentialStrengthPipe,
-    TemplateFormComponent
+    TemplateFormComponent,
+    ReactiveFormComponent
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes
 )
