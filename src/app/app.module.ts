@@ -15,6 +15,7 @@ import { UnlessDirective } from './unless.directive';
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
+import { RatingComponent } from './rating/rating.component';
 
 
 const appRoutes: Routes=[
@@ -40,7 +41,8 @@ const appRoutes: Routes=[
     UnlessDirective,
     ExponentialStrengthPipe,
     TemplateFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    RatingComponent
     
   ],
   imports: [
